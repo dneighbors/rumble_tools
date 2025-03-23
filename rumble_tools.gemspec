@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description   = "A Ruby gem for creating, parsing, and managing Warcraft Rumble loadouts"
   spec.homepage      = "https://github.com/dneighbors/rumble_tools"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0", "< 4.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage

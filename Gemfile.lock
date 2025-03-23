@@ -33,5 +33,8 @@ DEPENDENCIES
   rspec (~> 3.0)
   rumble_tools!
 
+RUBY VERSION
+   ruby 3.2.6p234
+
 BUNDLED WITH
    2.6.1
