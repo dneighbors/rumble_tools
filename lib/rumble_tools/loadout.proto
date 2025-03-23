@@ -1,0 +1,13 @@
+syntax = "proto3";
+package rumble_tools;
+
+message LoadoutProto {
+  int32 leader_id = 1;
+  int32 leader_talent_id = 2;
+  repeated TroopProto troops = 3;
+}
+
+message TroopProto {
+  int32 mini_id = 1;
+  int32 talent_id = 2;
+} 

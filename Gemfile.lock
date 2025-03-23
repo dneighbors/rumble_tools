@@ -1,14 +1,17 @@
 PATH
   remote: .
   specs:
-    rumble_tools (0.1.0)
+    rumble_tools (0.2.0)
       base64 (~> 0.1)
+      google-protobuf (~> 3.22)
 
 GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.2.0)
     diff-lcs (1.6.0)
+    google-protobuf (3.25.6)
+    google-protobuf (3.25.6-arm64-darwin)
     rake (13.2.1)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)

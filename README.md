@@ -91,6 +91,10 @@ Talents can be referenced by their index (0, 1, or 2) or by their full talent ID
 talent_id = RumbleTools::MiniTalent.talent_id_for(RumbleTools::Mini::DIRE_BATLINGS, 0)
 ```
 
+## Implementation Details
+
+The loadout codes in Warcraft Rumble are Protocol Buffer messages encoded in Base64. This gem uses the `google-protobuf` library to handle the encoding and decoding of these messages, ensuring compatibility with the game's format.
+
 ## Examples
 
 Check the examples directory for more usage patterns:
@@ -107,7 +111,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/dneighbors/rumble_tools](https://github.com/dneighbors/rumble_tools).
+Bug reports and pull requests are welcome on GitHub at https://github.com/dneighbors/rumble_tools.
 
 ## License
 
