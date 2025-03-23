@@ -2,6 +2,8 @@
 
 A lightweight Ruby toolkit for parsing and managing Warcraft Rumble loadouts.
 
+This gem is a Ruby port of [WarcraftRumbleLoadoutTools](https://github.com/Joobalee/WarcraftRumbleLoadoutTools), a C# library for decoding and encoding Warcraft Rumble deck strings.
+
 ## Installation
 
 Add this line to your application's Gemfile:
