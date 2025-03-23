@@ -3,12 +3,12 @@ require_relative 'lib/rumble_tools/version'
 Gem::Specification.new do |spec|
   spec.name          = "rumble_tools"
   spec.version       = RumbleTools::VERSION
-  spec.authors       = ["Your Name"]
-  spec.email         = ["your.email@example.com"]
+  spec.authors       = ["Derek Neighbors"]
+  spec.email         = ["dneighbo@gmail.com"]
 
   spec.summary       = "A lightweight toolkit for parsing and managing Warcraft Rumble loadouts"
   spec.description   = "A Ruby gem for creating, parsing, and managing Warcraft Rumble loadouts"
-  spec.homepage      = "https://github.com/yourusername/rumble_tools"
+  spec.homepage      = "https://github.com/dneighbors/rumble_tools"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 

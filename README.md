@@ -107,7 +107,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/yourusername/rumble_tools.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/dneighbors/rumble_tools](https://github.com/dneighbors/rumble_tools).
 
 ## License
 
