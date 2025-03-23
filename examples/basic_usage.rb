@@ -8,8 +8,10 @@ require 'json'
 include RumbleTools
 
 # Example 1: Import a loadout from a code
+#rumblo:CFIQAhoECCsQABoECEQQARoECBwQAhoECDIQABoECFkQAhoECDEQAg==
+#rumblo:CEMQABoECCYQAhoECBUQABoECF0QARoECAkQABoECB4QABoECFYQAQ==
 puts "=== Importing Loadout ==="
-imported_loadout = Loadout.from_code("rumblo:CEMQABoECCYQAhoECBUQABoECF0QARoECAkQABoECB4QABoECFYQAQ==")
+imported_loadout = Loadout.from_code("rumblo:CFIQAhoECCsQABoECEQQARoECBwQAhoECDIQABoECFkQAhoECDEQAg==")
 puts JSON.pretty_generate(imported_loadout.to_h)
 puts
 
@@ -22,11 +24,11 @@ created_loadout = Loadout.new(leader)
 # Add troops to the loadout
 created_loadout.troops = [
   Troop.new(Mini::DIRE_BATLINGS, MiniTalent.talent_id_for(Mini::DIRE_BATLINGS, 0)), # GUANO_HAPPENS
-  Troop.new(Mini::ANGRY_CHICKENS, 1), # WALKING_CRATE (using index)
-  Troop.new(Mini::GHOUL, 0), # TASTE_FOR_BLOOD
-  Troop.new(Mini::DEEP_BREATH, 1), # MELTING_POINT
-  Troop.new(Mini::CHAIN_LIGHTNING, 2), # REVERBERATION
-  Troop.new(Mini::NECROMANCER, 0) # MASTER_OF_DEATH
+  Troop.new(Mini::ANGRY_CHICKENS, MiniTalent.talent_id_for(Mini::ANGRY_CHICKENS, 1)), # WALKING_CRATE (using index)
+  Troop.new(Mini::GHOUL, MiniTalent.talent_id_for(Mini::GHOUL, 0)), # TASTE_FOR_BLOOD
+  Troop.new(Mini::DEEP_BREATH, MiniTalent.talent_id_for(Mini::DEEP_BREATH, 1)), # MELTING_POINT
+  Troop.new(Mini::CHAIN_LIGHTNING, MiniTalent.talent_id_for(Mini::CHAIN_LIGHTNING, 2)), # REVERBERATION
+  Troop.new(Mini::NECROMANCER, MiniTalent.talent_id_for(Mini::NECROMANCER, 0)) # MASTER_OF_DEATH
 ]
 
 puts "Troop talents:"
